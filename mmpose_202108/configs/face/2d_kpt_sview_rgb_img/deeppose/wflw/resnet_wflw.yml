@@ -1,0 +1,29 @@
+Collections:
+- Metadata:
+    Architecture:
+    - DeepPose
+    - ResNet
+  Name: resnet_wflw
+  Paper:
+  - http://openaccess.thecvf.com/content_cvpr_2014/html/Toshev_DeepPose_Human_Pose_2014_CVPR_paper.html
+  - http://openaccess.thecvf.com/content_cvpr_2016/html/He_Deep_Residual_Learning_CVPR_2016_paper.html
+  - http://openaccess.thecvf.com/content_cvpr_2018/html/Wu_Look_at_Boundary_CVPR_2018_paper.html
+  README: configs/face/2d_kpt_sview_rgb_img/deeppose/wflw/resnet_wflw.md
+Models:
+- Config: configs/face/2d_kpt_sview_rgb_img/deeppose/wflw/res50_wflw_256x256.py
+  In Collection: resnet_wflw
+  Metadata:
+    Training Data: WFLW
+  Name: face--2d_kpt_sview_rgb_img--deeppose--wflw--res50_wflw_256x256
+  Results:
+  - Dataset: WFLW
+    Metrics:
+      NME blur: 5.45
+      NME expression: 5.2
+      NME illumination: 4.81
+      NME makeup: 4.82
+      NME occlusion: 5.69
+      NME pose: 8.5
+      NME test: 4.85
+    Task: 2D Face Landmark Detection
+  Weights: https://download.openmmlab.com/mmpose/face/deeppose/deeppose_res50_wflw_256x256-92d0ba7f_20210303.pth
