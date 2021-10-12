@@ -8,3 +8,12 @@ Our entry is
 mainly based on YOLOF for instance and part detection, HRNet for human pose estimation, and CSN for video-level action recognition and frame-level part state parsing. 
 We describe technical details for the Kinetics-TPS dataset, together with some experimental results. 
 In the competition, we achieved 61.37\% mAP on the test set of Kinetics-TPS.
+
+```BibTeX
+@inproceedings{conf/iccv/ChenLLL021,
+  title={A Baseline Framework for Part-level Action Parsing and Action Recognition},
+  author={Xiaodong Chen, Xinchen Liu, Kun Liu, Wu Liu, Tao Mei},
+  booktitle={IEEE International Conference on Computer Vision (ICCV) Workshop},
+  year={2021}
+}
+```
